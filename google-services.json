@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "9625672496",
+    "project_id": "projectuaskel3-fc52d",
+    "storage_bucket": "projectuaskel3-fc52d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9625672496:android:2702c0ef18bf3eeff686f5",
+        "android_client_info": {
+          "package_name": "com.example.project_uas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuPZt9VC3bFkQeiD_Y2tF4TwsPm_-kHEE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
