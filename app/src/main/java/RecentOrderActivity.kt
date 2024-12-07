@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.project_uas.adapter.RecentBuyAdapter
 import com.example.project_uas.databinding.ActivityRecentOrderItemsBinding
 import com.example.project_uas.model.OrderDetails
 

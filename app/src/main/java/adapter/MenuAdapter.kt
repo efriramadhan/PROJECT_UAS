@@ -4,14 +4,16 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.view.LayoutInflater
-import android.view.MenuItem
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.example.project_uas.DetailsActivity
 import com.example.project_uas.databinding.MenuItemBinding
+import com.example.project_uas.model.MenuItem
 
 class MenuAdapter(
-    private val menuItems:List<MenuItem>,
-    private val requiredContext : Context
+    private val menuItems: MutableList<MenuItem>,
+    private val requiredContext: Context
 ): RecyclerView.Adapter<MenuAdapter.MenuViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MenuViewHolder {
@@ -53,7 +55,7 @@ class MenuAdapter(
         val menuItem = menuItems[position]
 
         // intent to open detail activity and pass data
-        val intent = Intent(requiredContext,DetailsActivity::class.java).apply {
+        val intent = Intent(requiredContext, DetailsActivity::class.java).apply {
             putExtra("MenuItemName",menuItem.foodName)
             putExtra("MenuItemImage",menuItem.foodImage)
             putExtra("MenuItemDescription",menuItem.foodDescription)

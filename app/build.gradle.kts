@@ -38,12 +38,12 @@ android {
         viewBinding = true
         dataBinding = true
     }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
-    }
 }
 
 dependencies {
+    implementation("com.github.smarteist:autoimageslider:1.4.0")
+    implementation("com.github.bumptech.glide:glide:4.15.1")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.15.1")
     implementation("com.google.android.gms:play-services-auth:20.7.0")
     implementation("com.google.android.material:material:1.9.0")
     implementation(platform("com.google.firebase:firebase-bom:33.6.0"))
@@ -58,6 +58,4 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-    debugImplementation("androidx.compose.ui:ui-tooling")
-    debugImplementation("androidx.compose.ui:ui-test-manifest")
 }
